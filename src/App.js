@@ -1,42 +1,5 @@
 import "./App.css";
-// import gptLogo from "./assets/chatgpt.svg";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <div className="slideBar">
-//         <div className="upperSide">
-//           <div className="upperSideTop">
-//             <img src={gptLogo} alt="Logo" className="logo" />
-//             <span className="brand">ChatGPT</span>
-//           </div>
-//           <button className="midBtn">
-//             <img src="" className="addBtn" />
-//             New Chat
-//           </button>
-//           <div className="upperSideBottom">
-//             <button className="query">
-//               <img src="" alt="" />
-//               What is Programming
-//             </button>
-//             <button className="query">
-//               <img src="" alt="" />
-//               What is Programming
-//             </button>
-//           </div>
-//         </div>
-
-//         <div className="lowerSide"></div>
-//       </div>
-//       <div className="main"></div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React, { useState } from "react";
-import "./App.css";
 import Header from "./components/Header";
 
 // import Header from "./components/Header/Header";
@@ -50,6 +13,7 @@ import NavBar1 from "./components/NavBar1";
 // import fornecedor360 from "./images/logo-fornecedor360-2.png";
 //logo-pcrj-iplan-2.p
 const App = () => {
+  const [search, setSearch] = useState("");
   const [isNavbarOpen, setIsNavbarOpen] = useState(false); // Estado para controlar o Navbar
 
   const toggleNavbar = () => {
@@ -85,7 +49,7 @@ const App = () => {
             </nav>
 
             <hr />
-            <h1 className="fw-normal">Seja bem-vindo(a)!</h1>
+            <h1 className="fw-normal">Seja bem-vindo(a)! {search}</h1>
             <hr />
 
             <form>
@@ -99,6 +63,8 @@ const App = () => {
                     type="text"
                     id="q"
                     name="q"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
                   />
                   <button
                     className="btn btn-primary"
