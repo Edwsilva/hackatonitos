@@ -36,20 +36,30 @@ import "./App.css";
 // export default App;
 
 import React, { useState } from "react";
+import "./App.css";
 import Header from "./components/Header";
+
 // import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import CompanyTable from "./components/CompanyTable";
 import Navbar from "./components/Navbar";
+import NavBar1 from "./components/NavBar1";
 // import logopcrj from "./images/logo-pcrj-iplan-2.png";
 // import fornecedor360 from "./images/logo-fornecedor360-2.png";
 //logo-pcrj-iplan-2.p
 const App = () => {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false); // Estado para controlar o Navbar
+
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen); // Alterna o estado ao clicar no botão
+  };
+
   return (
     <main className="pb-2 pt-5">
       <Header />
+      <NavBar1 isOpen={isNavbarOpen} toggleNavbar={toggleNavbar} />
 
       <div className="container my-5">
         <div className="bg-body-tertiary p-2 rounded">
@@ -150,18 +160,6 @@ const App = () => {
               </div>
             </section>
 
-            {/* <nav className="navbar fixed-bottom navbar-expand-sm navbar-dark bg-blue mb-0">
-              <div className="container">
-                <div className="row mx-2 my-2">
-                  <div className="col text-white small">
-                    <i className="fa fa-info-circle" aria-hidden="true"></i>{" "}
-                    <b>Prefeitura do Rio</b> | Todos os direitos reservados{" "}
-                    <span className="badge text-bg-light">Versão 1.1.0</span>{" "}
-                    2024
-                  </div>
-                </div>
-              </div>
-            </nav> */}
             <Footer />
           </div>
         </div>
@@ -171,3 +169,41 @@ const App = () => {
 };
 
 export default App;
+
+// import React, { useState } from "react";
+// import Navbar from "./components/NavBar1";
+// import "./App1.css"; // Importando o arquivo CSS
+
+// function App() {
+//   const [isNavbarOpen, setIsNavbarOpen] = useState(false); // Estado para controlar o Navbar
+
+//   const toggleNavbar = () => {
+//     setIsNavbarOpen(!isNavbarOpen); // Alterna o estado ao clicar no botão
+//   };
+
+//   return (
+//     <div className="app">
+//       <header className="header">
+//         <h1>Meu Sistema</h1>
+//         <button
+//           className="navbar-toggler"
+//           onClick={toggleNavbar}
+//           aria-label="Toggle navigation"
+//         >
+//           <span className="navbar-toggler-icon"></span> {/* Ícone do menu */}
+//         </button>
+//       </header>
+
+//       {/* Renderização condicional do Navbar */}
+//       <Navbar isOpen={isNavbarOpen} toggleNavbar={toggleNavbar} />
+
+//       {/* Conteúdo principal da página */}
+//       <main className="content">
+//         <h2>Bem-vindo ao sistema Fornecedor360</h2>
+//         <p>Este é o conteúdo principal da página.</p>
+//       </main>
+//     </div>
+//   );
+// }
+
+// export default App;

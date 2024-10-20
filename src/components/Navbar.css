@@ -1,0 +1,117 @@
+/* Estilo do container do navbar */
+.navbar-container {
+  position: absolute;
+  top: 0;
+  left: -250px; /* Fora da tela inicialmente */
+  width: 200px;
+  height: 100%;
+  background-color: #212529;
+  transition: left 0.3s ease; /* Transição suave para o efeito de deslizamento */
+  z-index: 1000;
+}
+
+/* Quando o navbar está aberto */
+.navbar-container.open {
+  left: 0; /* Desliza para dentro da tela */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(99, 51, 212);
+
+  padding: 15px;
+  display: flex; /* Ativando o Flexbox */
+  flex-direction: column; /* Itens dispostos em coluna */
+  /* justify-content: center; Centralizando verticalmente */
+  align-items: center; /* Centralizando horizontalmente */
+}
+
+.navbar-nav a {
+  color: white; /* Garante que todos os links também sejam brancos */
+}
+.navbar-header {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+}
+.navbar-bar .nav-link {
+  color: white !important; /* Força a cor branca */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.navbar-title {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.navbar-body {
+  margin-top: 20px;
+}
+
+.nav-item {
+  margin-bottom: 15px;
+}
+
+.dropdown-container {
+  background-color: rgb(230, 228, 228); /* Fundo branco */
+  color: black; /* Fonte preta */
+  border-radius: 5px; /* Bordas arredondadas (opcional) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra (opcional) */
+  padding-left: 10px;
+}
+
+.dropdown-item {
+  padding: 5px 0px; /* Padding para itens do dropdown */
+  text-decoration: none; /* Remove sublinhado */
+  display: block; /* Garante que os itens ocupem a largura total */
+  color: black !important;
+}
+
+.dropdown-divider {
+  height: 1px; /* Altura da linha */
+  background-color: #dee2e6; /* Cor da linha */
+  border: none; /* Remove bordas padrão */
+  margin: 5px 0; /* Espaçamento acima e abaixo da linha */
+}
+.nav-link:hover {
+  background-color: #f8f2f2;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Botão de fechar o navbar */
+.btn-close {
+  background-color: rgb(95, 4, 4);
+  /* border: none;
+  font-size: 4.2rem;
+  color: white;
+  cursor: pointer; */
+
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+  color: white; /* Cor do ícone */
+  cursor: pointer;
+  display: flex; /* Flex para centralizar o ícone */
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-close:hover {
+  color: #003cff;
+}
+
+.dropdown-container {
+  background-color: rgb(230, 228, 228); /* Fundo branco */
+  color: black; /* Fonte preta */
+  border-radius: 5px; /* Bordas arredondadas (opcional) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra (opcional) */
+  padding-left: 10px;
+}

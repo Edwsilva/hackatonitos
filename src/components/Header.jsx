@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
+import NavBar1 from "./NavBar1";
 import "font-awesome/css/font-awesome.min.css"; // Certifique-se de que o Font Awesome está instalado
 import "bootstrap/dist/css/bootstrap.min.css"; // Certifique-se de que o Bootstrap está instalado
 import logopcrj from "../images/logo-pcrj-iplan-2.png"; // Atualize para o caminho correto
@@ -7,9 +7,10 @@ import fornecedor360 from "../images/logo-fornecedor360-2.png"; // Atualize para
 
 const Header = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false); // Estado para controlar o Navbar
   const toggleNavbar = () => {
-    setShowNavbar(!showNavbar);
+    console.log("Mostra", isNavbarOpen);
+    setIsNavbarOpen(!isNavbarOpen);
   };
 
   return (
@@ -43,7 +44,9 @@ const Header = () => {
         <div>
           <img src={fornecedor360} style={{ width: "110px" }} alt="logo" />
         </div>
-        {showNavbar && <Navbar />}
+        {isNavbarOpen && (
+          <NavBar1 isOpen={isNavbarOpen} toggleNavbar={toggleNavbar} />
+        )}
       </div>
     </nav>
   );
