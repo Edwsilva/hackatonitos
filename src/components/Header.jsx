@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavBar1 from "./NavBar1";
+import Navbar from "./Navbar";
 import "font-awesome/css/font-awesome.min.css"; // Certifique-se de que o Font Awesome está instalado
 import "bootstrap/dist/css/bootstrap.min.css"; // Certifique-se de que o Bootstrap está instalado
 import logopcrj from "../images/logo-pcrj-iplan-2.png"; // Atualize para o caminho correto
@@ -45,7 +45,7 @@ const Header = () => {
           <img src={fornecedor360} style={{ width: "110px" }} alt="logo" />
         </div>
         {isNavbarOpen && (
-          <NavBar1 isOpen={isNavbarOpen} toggleNavbar={toggleNavbar} />
+          <Navbar isOpen={isNavbarOpen} toggleNavbar={toggleNavbar} />
         )}
       </div>
     </nav>

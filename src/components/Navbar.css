@@ -7,7 +7,7 @@
   height: 100%;
   background-color: #004a80;
   transition: left 0.8s ease; /* Transição suave para o efeito de deslizamento */
-  z-index: 9999;
+  z-index: 999;
 }
 
 /* Quando o navbar está aberto */
