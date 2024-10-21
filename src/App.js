@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 
 // import Header from "./components/Header/Header";
@@ -15,10 +15,26 @@ import NavBar1 from "./components/NavBar1";
 const App = () => {
   const [search, setSearch] = useState("");
   const [isNavbarOpen, setIsNavbarOpen] = useState(false); // Estado para controlar o Navbar
-
+  const [empresas, setEmpresas] = useState([]);
+  const [numEmpresas, setNumEmpresas] = useState(0);
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen); // Alterna o estado ao clicar no botão
   };
+
+  // Função de busca: filtra as empresas com base no nome
+  const empresasFiltradas = empresas.filter(
+    (empresa) => empresa.empresa.toLowerCase().includes(search.toLowerCase()) // Converte para minúsculas para busca case insensitive
+  );
+
+  useEffect(() => {
+    fetch("http://localhost:3001/empresas")
+      .then((response) => response.json())
+      .then((data) => {
+        setEmpresas(data);
+        setNumEmpresas(data.length); // Atualiza o número de empresas
+      })
+      .catch((error) => console.error("Erro ao buscar empresas:", error));
+  }, []);
 
   return (
     <main className="pb-2 pt-5">
@@ -107,7 +123,7 @@ const App = () => {
                           ></i>{" "}
                           Resultado da Pesquisa:{" "}
                           <span className="badge rounded-pill text-bg-primary">
-                            10 empresas encontradas
+                            {numEmpresas} empresas encontradas
                           </span>{" "}
                           |{" "}
                           <span className="badge rounded-pill text-bg-secondary">
@@ -120,7 +136,8 @@ const App = () => {
                         </h5>
                       </div>
                     </div>
-                    <CompanyTable />
+                    <CompanyTable empresas={empresasFiltradas} />{" "}
+                    {/* Passa as empresas como props */}
                   </div>
                 </div>
               </div>

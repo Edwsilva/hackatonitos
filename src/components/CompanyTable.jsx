@@ -243,16 +243,16 @@
 
 import React, { useEffect, useState } from "react";
 
-const CompanyTable = () => {
-  const [empresas, setEmpresas] = useState([]);
+const CompanyTable = ({ empresas }) => {
+  // const [empresas, setEmpresas] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:3001/empresas")
-      .then((response) => response.json())
-      .then((data) => setEmpresas(data))
+  // useEffect(() => {
+  //   fetch("http://localhost:3001/empresas")
+  //     .then((response) => response.json())
+  //     .then((data) => setEmpresas(data))
 
-      .catch((error) => console.error("Erro ao buscar empresas:", error));
-  }, []);
+  //     .catch((error) => console.error("Erro ao buscar empresas:", error));
+  // }, []);
   console.log(empresas);
 
   return (
