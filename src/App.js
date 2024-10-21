@@ -9,18 +9,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import CompanyTable from "./components/CompanyTable";
 import Navbar from "./components/Navbar";
-import NavBar1 from "./components/NavBar1";
-// import logopcrj from "./images/logo-pcrj-iplan-2.png";
-// import fornecedor360 from "./images/logo-fornecedor360-2.png";
-//logo-pcrj-iplan-2.p
+
 const App = () => {
   const [search, setSearch] = useState("");
   const [isNavbarOpen, setIsNavbarOpen] = useState(false); // Estado para controlar o Navbar
   const [empresas, setEmpresas] = useState([]);
   const [numEmpresas, setNumEmpresas] = useState(0);
-  const toggleNavbar = () => {
-    setIsNavbarOpen(!isNavbarOpen); // Alterna o estado ao clicar no botão
-  };
+  // const toggleNavbar = () => {
+  //   setIsNavbarOpen(!isNavbarOpen); // Alterna o estado ao clicar no botão
+  // };
 
   // Função de busca: filtra as empresas com base no nome
   const empresasFiltradas = empresas.filter(
@@ -40,7 +37,7 @@ const App = () => {
   return (
     <main className="pb-2 pt-5">
       <Header />
-      <NavBar1 isOpen={isNavbarOpen} toggleNavbar={toggleNavbar} />
+      {/* <NavBar1 isOpen={isNavbarOpen} toggleNavbar={toggleNavbar} /> */}
 
       <div className="container my-5">
         <div className="bg-body-tertiary p-2 rounded">
@@ -74,37 +71,7 @@ const App = () => {
                 <label htmlFor="q" className="form-label lead">
                   Pesquise pelo nome da empresa ou serviço desejado:
                 </label>
-                {/* <div className="input-group">
-                  <input
-                    className="form-control form-control-lg border border-primary"
-                    type="text"
-                    id="q"
-                    name="q"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                  />
-                  <button
-                    className="btn btn-primary"
-                    type="button"
-                    id="button-addon2"
-                  >
-                    <i className="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                  <button
-                    className="btn btn-primary"
-                    type="button"
-                    id="button-addon2"
-                  >
-                    <i className="fa fa-bolt" aria-hidden="true"></i>
-                  </button>
-                  <button
-                    className="btn btn-primary"
-                    type="button"
-                    id="button-addon2"
-                  >
-                    <i className="fa fa-magic" aria-hidden="true"></i>
-                  </button>
-                </div> */}
+
                 <div className="input-group">
                   <input
                     className="form-control form-control-lg border border-primary"

@@ -5,15 +5,24 @@
   left: -400px; /* Fora da tela inicialmente */
   width: 400px;
   height: 100%;
-  background-color: #004a80;
-  transition: left 0.8s ease; /* Transição suave para o efeito de deslizamento */
-  z-index: 999;
+  background-color: #80006b;
+  /* background-color: #004a80; */
+  transition: left 0.8s ease, opacity 0.8s ease, transform 0.8s ease; /* Transições para left, opacity e transform */
+  z-index: 9999;
+  opacity: 0; /* Começa invisível */
+  transform: translateX(-20px); /* Levemente deslocado para a esquerda */
 }
 
 /* Quando o navbar está aberto */
 /* .navbar-container.open {
   left: 0;
 } */
+
+.navbar-container.open {
+  left: 0px; /* Dentro da tela */
+  opacity: 1; /* Visível */
+  transform: translateX(0); /* Volta para a posição original */
+}
 
 .navbar {
   display: flex;

@@ -124,9 +124,9 @@ function Navbar({ isOpen, toggleNavbar }) {
 
   return (
     // <div className={`navbar-container ${isOpen ? "open" : ""}`}>
+
     <div
-      className="navbar-container"
-      style={{ left: isOpen ? "0px" : "-400px" }}
+      className={`navbar-container ${isOpen ? "open" : ""}`} // Adiciona a classe "open" se isOpen for true
     >
       <div className="header">
         <h5>Fornecedor360</h5>
