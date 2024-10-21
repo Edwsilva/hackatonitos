@@ -1,0 +1,172 @@
+.fullscreen {
+  height: 100vh;
+  /* background: url("../../images/logoIplan.png") no-repeat center center fixed; */
+  background-size: cover;
+}
+
+.container-full {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-full {
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+}
+
+.row-no-gutter {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.col-half {
+  width: 50%;
+  padding: 2rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.welcome-text {
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.action-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  width: 100%;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-link {
+  color: #2c3238;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* .account-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+} */
+.account-actions {
+  margin-top: 10px;
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: center; /* Opcional: centraliza o conteúdo horizontalmente */
+  gap: 3.5rem; /* Espaçamento entre o texto e o botão */
+}
+
+/* .btn-secondary {
+  background-color: rgba(180, 182, 184, 0.8);
+  color: rgb(15, 15, 15);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+.bg-gradient {
+  /* background: linear-gradient(135deg, #00a2ff, #0072ff);  */
+  background: #0072ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.info-logo {
+  max-width: 280px;
+  margin-bottom: 1rem;
+}
+
+.info-heading {
+  margin-bottom: 1rem;
+}
+
+.info-text {
+  margin-bottom: 1rem;
+}
+
+.info-lead {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.version-tag {
+  background-color: rgba(248, 249, 250, 0.8);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: #28a745;
+  border: 1px solid #28a745;
+}
