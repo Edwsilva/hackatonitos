@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import { FaSearch, FaBolt, FaMagic } from "react-icons/fa";
 import Header from "./components/Header";
 
 // import Header from "./components/Header/Header";
@@ -35,7 +36,7 @@ const App = () => {
       })
       .catch((error) => console.error("Erro ao buscar empresas:", error));
   }, []);
-
+  // console.log("DATA ", data);
   return (
     <main className="pb-2 pt-5">
       <Header />
@@ -65,7 +66,7 @@ const App = () => {
             </nav>
 
             <hr />
-            <h1 className="fw-normal">Seja bem-vindo(a)! {search}</h1>
+            <h1 className="fw-normal">Seja bem-vindo(a)!</h1>
             <hr />
 
             <form>
@@ -73,7 +74,7 @@ const App = () => {
                 <label htmlFor="q" className="form-label lead">
                   Pesquise pelo nome da empresa ou serviço desejado:
                 </label>
-                <div className="input-group">
+                {/* <div className="input-group">
                   <input
                     className="form-control form-control-lg border border-primary"
                     type="text"
@@ -103,6 +104,36 @@ const App = () => {
                   >
                     <i className="fa fa-magic" aria-hidden="true"></i>
                   </button>
+                </div> */}
+                <div className="input-group">
+                  <input
+                    className="form-control form-control-lg border border-primary"
+                    type="text"
+                    id="q"
+                    name="q"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                  />
+                  <div className="input-group-append">
+                    <button
+                      className="btn btn-primary custom-button"
+                      type="button"
+                    >
+                      <FaSearch />
+                    </button>
+                    <button
+                      className="btn btn-primary custom-button"
+                      type="button"
+                    >
+                      <FaBolt />
+                    </button>
+                    <button
+                      className="btn btn-primary custom-button"
+                      type="button"
+                    >
+                      <FaMagic />
+                    </button>
+                  </div>
                 </div>
               </div>
             </form>

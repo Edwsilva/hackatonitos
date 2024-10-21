@@ -13,6 +13,8 @@ import {
   FaCaretDown,
 } from "react-icons/fa";
 
+import { MdClose } from "react-icons/md";
+
 function NavBar1({ isOpen, toggleNavbar }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para controlar a exibição do dropdown
 
@@ -22,7 +24,18 @@ function NavBar1({ isOpen, toggleNavbar }) {
   };
 
   return (
-    <div className={`navbar-container ${isOpen ? "open" : ""}`}>
+    // <div className={`navbar-container ${isOpen ? "open" : ""}`}>
+    <div
+      className="navbar-container"
+      style={{ left: isOpen ? "0px" : "-400px" }}
+    >
+      <div className="header">
+        <h5>Fornecedor360</h5>
+        <button className="close-button" onClick={toggleNavbar}>
+          <MdClose size={24} /> {/* Tamanho do ícone */}
+        </button>
+      </div>
+
       <nav className="navbar">
         <div className="navbar-header">
           <ul className="navbar-nav">

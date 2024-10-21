@@ -16,12 +16,12 @@ const Header = () => {
   return (
     <nav
       className="navbar fixed-top navbar-dark bg-blue custom-navbar"
-      aria-label="Dark offcanvas navbar"
+      // aria-label="Dark offcanvas navbar"
     >
       <div className="container-fluid" style={{ height: "100%" }}>
         <div
-          className="navbar-brand"
-          style={{ display: "flex", alignItems: "center", height: "100%" }}
+        // className="navbar-brand"
+        // style={{ display: "flex", alignItems: "center", height: "100%" }}
         >
           <button
             className="navbar-toggler me-1"
@@ -30,7 +30,7 @@ const Header = () => {
             data-bs-target="#offcanvasNavbarDark"
             aria-controls="offcanvasNavbarDark"
             aria-label="Toggle navigation"
-            style={{ height: "20px", width: "30px" }}
+            // style={{ height: "20px", width: "60px", backgroundColor: "red" }}
             onClick={toggleNavbar}
           >
             <span className="navbar-toggler-icon"></span>

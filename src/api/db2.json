@@ -1,0 +1,123 @@
+[
+  {
+      "cnpj": "04.534.084/0001-02",
+      "empresa": "PBI Informática Ltda",
+      "contato": "(51)3029-0029",
+      "email": "negocios@bence.com.br",
+      "site": "www.bence.com.br",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "22.233.581/0001-44",
+      "empresa": "AX4B Sistemas de Informática Ltda",
+      "contato": "(21)3197-2545",
+      "email": "marcio.cassiano@ax4b.com",
+      "site": "www.ax4b.com",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "21.034.800/0001-01",
+      "empresa": "BLANK IT CONSULTORIA EM INFORMÁTICA LTDA",
+      "contato": "(21)99862-4333",
+      "email": "ilan.blank@blankit.com.br",
+      "site": "www.blankit.com.br",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "02.877.566/0001-21",
+      "empresa": "IBROWSE CONSULTORIA E INFORMÁTICA LTDA",
+      "contato": "(51)3458-3160",
+      "email": "ibrowse@ibrowse.com.br",
+      "site": "www.ibrowse.com.br",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "00.092.369/0001-71",
+      "empresa": "NETCENTER INFORMÁTICA LTDA",
+      "contato": "(21)4501-4000",
+      "email": "contato@netcenter.com.br",
+      "site": "www.netcenter.com.br",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "33.402.892/0001-06",
+      "empresa": "ABNT",
+      "contato": "(61) 3344-0236",
+      "email": "mrossetto@alltechsolucoes.com.br",
+      "site": "www.alltechsolucoes.com.br",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "3.482.307/0001-18",
+      "empresa": "AGF Engenharia de Combate a Incêndio",
+      "contato": "(21)3596-3754",
+      "email": "comercial@agf.eng.br",
+      "site": "www.agf.eng.br",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "02.935.467/0001-59",
+      "empresa": "Marvin Comércio de Extintores Ltda",
+      "contato": "(21) 2661-2077",
+      "email": "vendas3@marvinextintores.com.br",
+      "site": "marvinextintores.com.br",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "11.574.847/0001-04",
+      "empresa": "SYC SOLUCOES E GESTAO DE SEGURANCA LTDA",
+      "contato": "(21) 3082-9506",
+      "email": "syc@sycsolucoes.com.br",
+      "site": "www.sycsolucoes.com.br",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "73.239.162/0001-50",
+      "empresa": "CENTRAL FIRE COM E MANUTENCAO DE EQUIP INCENDIO LTDA",
+      "contato": "(21) 2281-8103",
+      "email": "comercial@centralfire.com.br",
+      "site": "www.centralfire.com.br",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  },
+  {
+      "cnpj": "07.692.685/0001-23",
+      "empresa": "J.S.R.C. EXTINTORES E GNV",
+      "contato": "(21) 99296-7274",
+      "email": "thaisbernardes.extintores@gmail.com",
+      "site": "www.jsrc-extintores.com",
+      "avaliacao": {
+          "estrelas": 5.0,
+          "comentario": "★★★★★"
+      }
+  }
+]

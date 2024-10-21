@@ -1,24 +1,24 @@
 /* Estilo do container do navbar */
 .navbar-container {
   position: absolute;
-  top: 0;
-  left: -250px; /* Fora da tela inicialmente */
-  width: 200px;
+  top: 0px;
+  left: -400px; /* Fora da tela inicialmente */
+  width: 400px;
   height: 100%;
-  background-color: #212529;
-  transition: left 0.3s ease; /* Transição suave para o efeito de deslizamento */
-  z-index: 1000;
+  background-color: #004a80;
+  transition: left 0.8s ease; /* Transição suave para o efeito de deslizamento */
+  z-index: 9999;
 }
 
 /* Quando o navbar está aberto */
-.navbar-container.open {
-  left: 0; /* Desliza para dentro da tela */
-}
+/* .navbar-container.open {
+  left: 0;
+} */
 
 .navbar {
   display: flex;
   flex-direction: column;
-  background-color: rgb(99, 51, 212);
+  background-color: #004a80;
 
   padding: 15px;
   display: flex; /* Ativando o Flexbox */
@@ -114,4 +114,19 @@
   border-radius: 5px; /* Bordas arredondadas (opcional) */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra (opcional) */
   padding-left: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center; /* Alinha verticalmente no centro */
+  justify-content: space-between; /* Espalha o espaço entre os itens */
+  padding: 10px;
+  color: white;
+}
+
+.close-button {
+  background: none; /* Remove fundo do botão */
+  border: none; /* Remove borda do botão */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  color: white;
 }

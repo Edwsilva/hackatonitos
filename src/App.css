@@ -1,11 +1,11 @@
 * {
   margin: 0;
-  padding: o;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-size: 60.5%;
+  /* font-size: 95.5%; */
 }
 
 /* html {
@@ -22,7 +22,7 @@ body {
 }
 
 .custom-navbar {
-  height: 45px; /* ajuste a altura conforme necessário */
+  height: 80px; /* ajuste a altura conforme necessário */
   /* padding: 0; ajuste o padding para controlar melhor a altura */
   padding: "0 10px";
 }
@@ -71,7 +71,7 @@ body {
 }
 
 .table-blue {
-  background-color: blue !important; /* para forçar a aplicação do estilo */
+  background-color: rgb(17, 17, 19) !important; /* para forçar a aplicação do estilo */
 }
 
 @keyframes App-logo-spin {
@@ -81,4 +81,32 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+.input-group {
+  display: flex;
+  align-items: center; /* Alinha verticalmente no centro */
+}
+
+.input-group-append {
+  display: flex; /* Garante que os botões fiquem em linha */
+}
+
+.custom-button {
+  margin-left: 0px; /* Espaçamento entre os botões */
+  padding: 10px 15px; /* Estilo de padding dos botões */
+  border-radius: 0px !important; /* Remove o border-radius */
+}
+.custom-button:last-child{
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+
+
+.custom-button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
 }
