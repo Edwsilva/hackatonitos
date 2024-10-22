@@ -22,6 +22,7 @@ const CompanyTable = ({ empresas }) => {
               backgroundColor: "#0D6EFD",
               color: "white",
               marginTop: "10px",
+              width: "6   00px",
             }}
           >
             <th

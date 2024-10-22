@@ -15,7 +15,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 } */
 body {
-  background: rgb(3, 0, 31);
+  background: white;
   color: white;
   font-family: "System-ui", sans-serif;
 }

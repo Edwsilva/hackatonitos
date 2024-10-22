@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import IA from "../../assets/IA.png";
+import chatgpt from "../../assets/chatgpt.svg";
 import { FaMagic } from "react-icons/fa";
 import { Dropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -41,6 +42,11 @@ const TypeWriterModal = ({ show, handleClose }) => {
       </Modal.Header>
       <Modal.Body>
         <div className="titulo-principal">
+          <img
+            src={IA}
+            alt="Ícone"
+            style={{ width: "30px", height: "30px", marginRight: "5px" }}
+          />
           {text}
           <span className="cursor">|</span>
         </div>
