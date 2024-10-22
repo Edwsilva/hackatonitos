@@ -10,7 +10,7 @@ import "./typeWriterEffect.css"; // Importando o CSS
 const TypeWriterModal = ({ show, handleClose }) => {
   const [text, setText] = useState("");
   const fullText =
-    "Efeito Máquina de Escrever com React, utilize em seus projetos esse efeito bacana!";
+    " Pesquisa feita por IA utilizada no projeto de protótipo  da equipe hackatônitos!";
 
   // Função para executar o efeito de digitação
   const typeWriter = () => {
