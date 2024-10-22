@@ -1,204 +1,317 @@
 // import React from "react";
 
-// function Navbar() {
+// const CompanyTable = () => {
 //   return (
-//     <nav className="navbar navbar-expand-sm navbar-dark bg-blue mb-0">
-//       <div className="container-fluid">
-//         {/* Menu offcanvas que aparece ao clicar no ícone de sanduíche */}
+//     <div className="card">
+//       <div className="card-body p-0">
 //         <div
-//           className="offcanvas offcanvas-start text-bg-blue"
-//           tabIndex="-1"
-//           id="offcanvasNavbarDark"
-//           aria-labelledby="offcanvasNavbarDarkLabel"
+//           className="table-responsive"
+//           style={{ position: "relative", height: "400px", overflowY: "auto" }}
 //         >
-//           <div className="offcanvas-header">
-//             {/* Título ajustado para duas linhas */}
-//             <h5 className="offcanvas-title" id="offcanvasNavbarDarkLabel">
-//               Fornecedor
-//               <br />
-//               <b>360</b>
-//             </h5>
-//             <button
-//               type="button"
-//               className="btn-close btn-close-white"
-//               data-bs-dismiss="offcanvas"
-//               aria-label="Close"
-//             ></button>
-//           </div>
-
-//           {/* Corpo do offcanvas com os links do menu */}
-//           <div className="offcanvas-body">
-//             <ul className="navbar-nav flex-column">
-//               {/* Dropdown de usuário */}
-//               <li className="nav-item dropdown mb-2">
-//                 <a
-//                   className="nav-link dropdown-toggle"
-//                   href="#"
-//                   role="button"
-//                   data-bs-toggle="dropdown"
-//                   aria-expanded="false"
-//                 >
-//                   Usuário: <b>Leonardo Silva</b>
-//                 </a>
-//                 <ul className="dropdown-menu">
-//                   <li>
-//                     <a className="dropdown-item" href="#">
-//                       <i className="fa fa-user" aria-hidden="true"></i> Meu
-//                       Perfil
-//                     </a>
-//                   </li>
-//                   <li>
-//                     <hr className="dropdown-divider" />
-//                   </li>
-//                   <li>
-//                     <a className="dropdown-item" href="index.html">
-//                       <i className="fa fa-sign-out" aria-hidden="true"></i>{" "}
-//                       Efetuar Logoff
-//                     </a>
-//                   </li>
-//                 </ul>
-//               </li>
-
-//               {/* Links dispostos verticalmente */}
-//               <li className="nav-item mb-2">
-//                 <a className="btn btn-primary w-100" href="#">
-//                   <i className="fa fa-home" aria-hidden="true"></i> Principal
-//                 </a>
-//               </li>
-//               <li className="nav-item mb-2">
-//                 <a className="btn btn-primary w-100" href="#">
-//                   <i className="fa fa-search" aria-hidden="true"></i> Pesquisa
-//                 </a>
-//               </li>
-//               <li className="nav-item mb-2">
-//                 <a className="btn btn-primary w-100" href="#">
-//                   <i className="fa fa-truck" aria-hidden="true"></i>{" "}
-//                   Fornecedores
-//                 </a>
-//               </li>
-//               <li className="nav-item mb-2">
-//                 <a className="btn btn-primary w-100" href="#">
-//                   <i className="fa fa-users" aria-hidden="true"></i> Usuários
-//                 </a>
-//               </li>
-//               <li className="nav-item mb-2">
-//                 <a className="btn btn-primary w-100" href="#">
-//                   <i className="fa fa-question-circle" aria-hidden="true"></i>{" "}
-//                   Ajuda
-//                 </a>
-//               </li>
-//             </ul>
-//           </div>
+//           <table className="table table-striped table-hover mb-0">
+//             <thead className="table-blue">
+//               <tr>
+//                 <th scope="col">CNPJ</th>
+//                 <th scope="col">Empresa</th>
+//                 <th scope="col">Contatos</th>
+//                 <th scope="col">Email</th>
+//                 <th scope="col">Site</th>
+//                 <th scope="col">Avaliação</th>
+//                 <th scope="col"></th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               <tr>
+//                 <td>12.345.678/0001-90</td>
+//                 <td>Empresa Alfa</td>
+//                 <td>(21) 1234-5678</td>
+//                 <td>contato@empresa-alfa.com</td>
+//                 <td>www.empresa-alfa.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★★★★☆</span> 4.5
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//               <tr>
+//                 <td>23.456.789/0001-01</td>
+//                 <td>Beta Solutions</td>
+//                 <td>(11) 9876-5432</td>
+//                 <td>info@betasolutions.com</td>
+//                 <td>www.betasolutions.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★★★☆☆</span> 3.8
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//               <tr>
+//                 <td>34.567.890/0001-12</td>
+//                 <td>Gamma Tech</td>
+//                 <td>(31) 3456-7890</td>
+//                 <td>contato@gammatech.com</td>
+//                 <td>www.gammatech.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★★★★★</span> 4.7
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//               <tr>
+//                 <td>45.678.901/0001-23</td>
+//                 <td>Delta Innovators</td>
+//                 <td>(41) 4567-8901</td>
+//                 <td>info@delta-innovators.com</td>
+//                 <td>www.delta-innovators.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★☆☆☆☆</span> 1.0
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//               <tr>
+//                 <td>56.789.012/0001-34</td>
+//                 <td>Empresa Epsilon</td>
+//                 <td>(51) 5678-9012</td>
+//                 <td>contato@epsilon.com</td>
+//                 <td>www.epsilon.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★★★☆☆</span> 3.0
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//               <tr>
+//                 <td>67.890.123/0001-45</td>
+//                 <td>Omicron Corp</td>
+//                 <td>(61) 6789-0123</td>
+//                 <td>info@omicroncorp.com</td>
+//                 <td>www.omicroncorp.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★★★★☆</span> 4.0
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//               <tr>
+//                 <td>78.901.234/0001-56</td>
+//                 <td>Lambda Systems</td>
+//                 <td>(71) 7890-1234</td>
+//                 <td>contato@lambdasystems.com</td>
+//                 <td>www.lambdasystems.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★★★★☆</span> 4.0
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//               <tr>
+//                 <td>89.012.345/0001-67</td>
+//                 <td>Kappa Consulting</td>
+//                 <td>(81) 8901-2345</td>
+//                 <td>info@kappaconsulting.com</td>
+//                 <td>www.kappaconsulting.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★★★★★</span> 5.0
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//               <tr>
+//                 <td>90.123.456/0001-78</td>
+//                 <td>Empresa Sigma</td>
+//                 <td>(91) 9012-3456</td>
+//                 <td>contato@sigmacorp.com</td>
+//                 <td>www.sigmacorp.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★★★☆☆</span> 3.0
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//               <tr>
+//                 <td>01.234.567/0001-89</td>
+//                 <td>Theta Ventures</td>
+//                 <td>(92) 0123-4567</td>
+//                 <td>info@thetaventures.com</td>
+//                 <td>www.thetaventures.com</td>
+//                 <td>
+//                   <span className="badge text-bg-light">
+//                     <span className="text-warning">★★★☆☆</span> 3.7
+//                   </span>
+//                 </td>
+//                 <td>
+//                   <button
+//                     type="button"
+//                     className="btn btn-sm btn-outline-primary"
+//                   >
+//                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+//                     Detalhes
+//                   </button>
+//                 </td>
+//               </tr>
+//             </tbody>
+//           </table>
 //         </div>
 //       </div>
-//     </nav>
+//     </div>
 //   );
-// }
+// };
 
-// export default Navbar;
+// export default CompanyTable;
 
-import React, { useState } from 'react';
-// import "bootstrap/dist/css/bootstrap.min.css";
-import './Navbar.css'; // Importar o CSS para o efeito de deslizamento
-import {
-  FaHome,
-  FaSearch,
-  FaCar,
-  FaPhone,
-  FaQuestionCircle,
-  FaTimes,
-  FaUser,
-  FaSignOutAlt,
-  FaCaretDown,
-} from 'react-icons/fa';
+import React, { useEffect, useState } from "react";
 
-import { MdClose } from 'react-icons/md';
+const CompanyTable = ({ empresas }) => {
+  // const [empresas, setEmpresas] = useState([]);
 
-function Navbar({ isOpen, toggleNavbar }) {
-  const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para controlar a exibição do dropdown
+  // useEffect(() => {
+  //   fetch("http://localhost:3001/empresas")
+  //     .then((response) => response.json())
+  //     .then((data) => setEmpresas(data))
 
-  const toggleDropdown = () => {
-    console.log('togleDropDown ', isDropdownOpen);
-    setDropdownOpen(!isDropdownOpen); // Alterna o estado
-  };
+  //     .catch((error) => console.error("Erro ao buscar empresas:", error));
+  // }, []);
+  console.log(empresas);
 
   return (
-    // <div className={`navbar-container ${isOpen ? "open" : ""}`}>
-
     <div
-      className={`navbar-container ${isOpen ? 'open' : ''}`}
-      // Adiciona a classe "open" se isOpen for true
+      className="table-responsive"
+      style={{ position: "relative", height: "400px", overflowY: "auto" }}
     >
-      <div className="header">
-        <h5>Fornecedor360</h5>
-        <button className="close-button" onClick={toggleNavbar}>
-          <MdClose size={24} /> {/* Tamanho do ícone */}
-        </button>
-      </div>
-
-      <nav className="navbar">
-        <div className="navbar-header">
-          <ul className="navbar-nav">
-            <a
-              className="nav-link"
-              href="#"
-              role="button"
-              //   aria-expanded="true"
-              aria-expanded={isDropdownOpen} // Atualiza a propriedade aria-expanded com base no estado
-              onClick={toggleDropdown} // Chama a função de alternar o dropdown
+      <table style={{ padding: "5px" }}>
+        <thead>
+          <tr
+            style={{
+              backgroundColor: "#004A80",
+              color: "white",
+            }}
+          >
+            <th
+              style={{ borderRadius: "5px 0 0 0", color: "white" }}
+              scope="col"
             >
-              Usuário: <b>Edwilson da Silva</b>
-              <FaCaretDown style={{ marginLeft: '5px' }} />
-              <FaTimes
-                style={{ marginLeft: '10px', cursor: 'pointer' }}
-                onClick={toggleNavbar}
-              />
-            </a>
-            {isDropdownOpen && ( // Renderiza o dropdown somente se isDropdownOpen for true
-              <div className="dropdown-menu show dropdown-container">
-                <a className="dropdown-item" href="#">
-                  <FaUser aria-hidden="true" /> Meu Perfil
-                </a>
-                <hr className="dropdown-divider" />
-                <a className="dropdown-item" href="index.html">
-                  <FaSignOutAlt aria-hidden="true" /> Efetuar Logoff
-                </a>
-              </div>
-            )}
-          </ul>
-        </div>
-        <div className="navbar-body">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                <FaHome /> Principal
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                <FaSearch /> Pesquisa
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                <FaCar /> Fornecedores
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                <FaPhone /> Usuários
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                <FaQuestionCircle /> Ajuda
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+              CNPJ
+            </th>
+            <th scope="col">Empresa</th>
+            <th scope="col">Contatos</th>
+            <th scope="col">Email</th>
+            <th scope="col">Site</th>
+            <th scope="col">Avaliação</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {empresas.map((empresa) => (
+            <tr key={empresa.cnpj}>
+              <td>{empresa.cnpj}</td>
+              <td>{empresa.empresa}</td>
+              <td>{empresa.contato}</td>
+              <td>{empresa.email}</td>
+              <td>{empresa.site}</td>
+              <td>
+                <span className="badge text-bg-light">
+                  <span className="text-warning">
+                    {empresa.avaliacao.comentario}
+                  </span>{" "}
+                  {empresa.avaliacao.estrelas}
+                </span>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  className="btn btn-sm btn-outline-primary"
+                >
+                  <i className="fa fa-list-alt" aria-hidden="true"></i> Detalhes
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
-}
+};
 
-export default Navbar;
+export default CompanyTable;
