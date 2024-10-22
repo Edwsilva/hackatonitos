@@ -5,7 +5,7 @@
 }
 
 html {
-  /* font-size: 95.5%; */
+  /* font-size: 1rem; */
 }
 
 /* html {
@@ -71,7 +71,11 @@ body {
 }
 
 .table-blue {
-  background-color: rgb(17, 17, 19) !important; /* para forçar a aplicação do estilo */
+  background-color: rgb(
+    17,
+    17,
+    19
+  ) !important; /* para forçar a aplicação do estilo */
 }
 
 @keyframes App-logo-spin {
@@ -82,9 +86,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
-
-
 
 .input-group {
   display: flex;
@@ -100,12 +101,10 @@ body {
   padding: 10px 15px; /* Estilo de padding dos botões */
   border-radius: 0px !important; /* Remove o border-radius */
 }
-.custom-button:last-child{
+.custom-button:last-child {
   border-top-right-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
 }
-
-
 
 .custom-button:hover {
   background-color: #0056b3; /* Cor ao passar o mouse */

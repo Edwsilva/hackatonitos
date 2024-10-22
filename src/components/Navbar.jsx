@@ -121,13 +121,12 @@ function Navbar({ isOpen, toggleNavbar }) {
     console.log("togleDropDown ", isDropdownOpen);
     setDropdownOpen(!isDropdownOpen); // Alterna o estado
   };
-
+  console.log("isOpen ", isOpen);
   return (
     // <div className={`navbar-container ${isOpen ? "open" : ""}`}>
 
-    <div
-      className={`navbar-container ${isOpen ? "open" : ""}`} // Adiciona a classe "open" se isOpen for true
-    >
+    // <div className={`navbar-container ${isOpen ? "open" : ""}`}>
+    <div className={`navbar-container ${isOpen ? "open" : ""}`}>
       <div className="header">
         <h5>Fornecedor360</h5>
         <button className="close-button" onClick={toggleNavbar}>
@@ -148,10 +147,10 @@ function Navbar({ isOpen, toggleNavbar }) {
             >
               Usuário: <b>Edwilson da Silva</b>
               <FaCaretDown style={{ marginLeft: "5px" }} />
-              <FaTimes
+              {/* <FaTimes
                 style={{ marginLeft: "10px", cursor: "pointer" }}
                 onClick={toggleNavbar}
-              />
+              /> */}
             </a>
             {isDropdownOpen && ( // Renderiza o dropdown somente se isDropdownOpen for true
               <div className="dropdown-menu show dropdown-container">

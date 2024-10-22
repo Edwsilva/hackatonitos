@@ -9,7 +9,7 @@ const Header = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [isNavbarOpen, setIsNavbarOpen] = useState(false); // Estado para controlar o Navbar
   const toggleNavbar = () => {
-    console.log("Mostra", isNavbarOpen);
+    // console.log("Mostra", isNavbarOpen);
     setIsNavbarOpen(!isNavbarOpen);
   };
 

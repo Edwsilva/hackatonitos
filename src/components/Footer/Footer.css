@@ -1,0 +1,24 @@
+.custom-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Garante que o rodapé comece do lado esquerdo */
+  right: 0; /* Garante que o rodapé termine do lado direito */
+  width: 100%; /* Garante que o rodapé ocupe toda a largura */
+  background-color: #004a86; /* Cor de fundo */
+  padding: 10px 0; /* Espaçamento vertical */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  z-index: 1000; /* Garante que fique acima de outros elementos, se necessário */
+}
+
+.container {
+  max-width: 960px; /* Limita a largura do conteúdo */
+  margin: 0 auto; /* Centraliza o container */
+}
+
+.version-badge {
+  background-color: #f8f9fa; /* Cor de fundo da badge */
+  color: #000; /* Cor do texto da badge */
+  padding: 3px 6px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+}
