@@ -21,6 +21,7 @@ const CompanyTable = ({ empresas }) => {
             style={{
               backgroundColor: "#0D6EFD",
               color: "white",
+              marginTop: "10px",
             }}
           >
             <th
@@ -28,6 +29,7 @@ const CompanyTable = ({ empresas }) => {
                 borderRadius: "5px 0 0 0",
                 color: "white",
                 padding: "10px",
+                marginBottom: "10px",
               }}
               scope="col"
             >
@@ -39,6 +41,7 @@ const CompanyTable = ({ empresas }) => {
             <th scope="col">Site</th>
             <th scope="col">Atualização</th>
             <th scope="col">Avaliação</th>
+            <th scope="col"></th>
             <th scope="col"></th>
           </tr>
         </thead>
