@@ -3,7 +3,7 @@
   position: absolute;
   top: 0px;
   left: -300px; /* Fora da tela inicialmente */
-  width: 300px;
+  width: 250px;
   height: 100%;
   /* background-color: #80006b; */
   background-color: #004a80;
@@ -26,11 +26,12 @@
 
   padding: 15px;
   display: flex; /* Ativando o Flexbox */
-  flex-direction: column; /* Itens dispostos em coluna */
-  /* justify-content: center; Centralizando verticalmente */
-  align-items: center; /* Centralizando horizontalmente */
 }
 
+.navbar-nav {
+  list-style: none;
+  width: 100%;
+}
 .navbar-nav a {
   color: white; /* Garante que todos os links também sejam brancos */
 }
@@ -40,13 +41,16 @@
   /* align-items: center; */
 }
 
-.navbar-nav {
-  list-style: none;
-  padding: 0;
+.navbar-body {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
 }
 .navbar-bar .nav-link {
   color: white !important; /* Força a cor branca */
   text-decoration: none; /* Remove o sublinhado dos links */
+  padding: 10px 15px; /* Espaçamento interno para os links */
+  display: block;
 }
 
 .navbar-title {
@@ -55,14 +59,19 @@
   margin: 0;
 }
 
-.navbar-body {
-  margin-top: 20px;
-}
-
 .nav-item {
-  margin-bottom: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #003cff;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10px;
+  padding: 0px;
 }
 
+.nav-item:hover {
+  background-color: #4a47d4;
+}
 .dropdown-container {
   background-color: rgb(230, 228, 228); /* Fundo branco */
   color: black; /* Fonte preta */
@@ -83,11 +92,6 @@
   background-color: #dee2e6; /* Cor da linha */
   border: none; /* Remove bordas padrão */
   margin: 5px 0; /* Espaçamento acima e abaixo da linha */
-}
-.nav-link:hover {
-  background-color: #f8f2f2;
-  padding: 8px;
-  border-radius: 5px;
 }
 
 /* Botão de fechar o navbar */
