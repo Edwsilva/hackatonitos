@@ -1,9 +1,30 @@
-import React from 'react';
-import './login.css';
-import logofornecedor from '../../images/logo-fornecedor.png';
-import logopcrj from '../../images/logo-pcrj-iplan-2.png';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./login.css";
+import logofornecedor from "../../images/logo-fornecedor.png";
+import logopcrj from "../../images/logo-pcrj-iplan-2.png";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleAccess = (e) => {
+    e.preventDefault();
+    if (email === "" || password === "") {
+      setError("Por favor, preencha todos os campos.");
+      setTimeout(() => {
+        setError("");
+      }, 2000);
+      return;
+    }
+
+    // Se ambos os campos estão preenchidos, navega para a rota Home
+    setError(""); // Limpa a mensagem de erro
+    navigate("/action-2");
+  };
+
   return (
     <section className="fullscreen">
       <div className="container-full">
@@ -26,7 +47,9 @@ const Login = () => {
                         type="email"
                         id="email"
                         className="input-field"
-                        placeholder="Seu email .rio ou matricula"
+                        placeholder="Seu email .rio ou matrícula"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
 
@@ -37,11 +60,17 @@ const Login = () => {
                         id="password"
                         className="input-field"
                         placeholder="Senha"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                     </div>
 
                     <div className="action-group">
-                      <button className="btn-primary" type="submit">
+                      <button
+                        className="btn-primary"
+                        type="submit"
+                        onClick={handleAccess}
+                      >
                         Acessar
                       </button>
                       <button className="btn-link" type="button">
@@ -50,11 +79,12 @@ const Login = () => {
                     </div>
 
                     <div className="account-actions">
-                      <p style={{ color: 'black' }}>Não tem uma conta?</p>
+                      <p style={{ color: "black" }}>Não tem uma conta?</p>
                       <button className="btn-secondary">
                         Solicite seu acesso
                       </button>
                     </div>
+                    {error && <p style={{ color: "red" }}>{error}</p>}
                   </form>
                 </div>
               </div>
