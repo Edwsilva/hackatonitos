@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css"; // Importar o CSS para o efeito de deslizamento
 import {
@@ -16,7 +17,13 @@ import {
 import { MdClose } from "react-icons/md";
 
 function Navbar({ isOpen, toggleNavbar }) {
-  const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para controlar a exibição do dropdown
+  const navigate = useNavigate();
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleLogoff = () => {
+    // Redireciona para a tela de Login
+    navigate("/");
+  };
 
   const toggleDropdown = () => {
     console.log("togleDropDown ", isDropdownOpen);
@@ -46,7 +53,7 @@ function Navbar({ isOpen, toggleNavbar }) {
                   <FaUser aria-hidden="true" /> Meu Perfil
                 </a>
                 <hr className="dropdown-divider" />
-                <a className="dropdown-item" href="index.html">
+                <a className="dropdown-item" href="" onClick={handleLogoff}>
                   <FaSignOutAlt aria-hidden="true" /> Efetuar Logoff
                 </a>
               </div>
