@@ -263,15 +263,23 @@ const CompanyTable = ({ empresas }) => {
           style={{ position: "relative", height: "400px", overflowY: "auto" }}
         >
           <table className="table table-striped table-hover mb-0">
-            <thead>
-              <tr style={{ backgroundColor: 'blue' }}>
-                <th style={{ backgroundColor: '#004A80', color:"white" }} scope="col">CNPJ</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white"}} scope="col">Empresa</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col">Contatos</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col">Email</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col">Site</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col">Avaliação</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col"></th>
+            <thead style={{ backgroundColor: "#004A80" }}>
+              <tr style={{ backgroundColor: "#004A80" }}>
+                <th scope="col">CNPJ</th>
+                <th scope="col">Empresa</th>
+                <th scope="col">Contatos</th>
+                <th scope="col">Email</th>
+                <th scope="col">Site</th>
+                <th
+                  style={{ backgroundColor: "#004A80", color: "white" }}
+                  scope="col"
+                >
+                  Avaliação
+                </th>
+                <th
+                  style={{ backgroundColor: "#004A80", color: "white" }}
+                  scope="col"
+                ></th>
               </tr>
             </thead>
             <tbody>

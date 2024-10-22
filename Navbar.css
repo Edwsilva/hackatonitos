@@ -111,21 +111,38 @@
   margin: 5px 0; /* Espaçamento acima e abaixo da linha */
 }
 
-.nav-item > .nav-link {
+.nav-item > .nav-link{
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
   border-radius: 10px;
-  /* color: white; */
-  /* background: #0d6efd; */
+  color: white;
+  background: #0d6efd;
 }
 
 .nav-item > .nav-link:hover {
-  background-color: #004cff;
+  background-color: #0b5ed7;
   color: white;
-  width: 100%;
+}
+
+/* Botão de fechar o navbar */
+.btn-close {
+  background-color: rgb(95, 4, 4);
+  /* border: none;
+  font-size: 4.2rem;
+  color: white;
+  cursor: pointer; */
+
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+  color: white; /* Cor do ícone */
+  cursor: pointer;
+  display: flex; /* Flex para centralizar o ícone */
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-close:hover {
