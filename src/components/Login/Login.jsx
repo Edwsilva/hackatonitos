@@ -1,7 +1,7 @@
-import React from "react";
-import "./login.css";
-import logofornecedor from "../../images/logo-fornecedor.png";
-import logopcrj from "../../images/logo-pcrj-iplan-2.png";
+import React from 'react';
+import './login.css';
+import logofornecedor from '../../images/logo-fornecedor.png';
+import logopcrj from '../../images/logo-pcrj-iplan-2.png';
 
 const Login = () => {
   return (
@@ -26,7 +26,7 @@ const Login = () => {
                         type="email"
                         id="email"
                         className="input-field"
-                        placeholder="seu email .rio ou matricula"
+                        placeholder="Seu email .rio ou matricula"
                       />
                     </div>
 
@@ -36,6 +36,7 @@ const Login = () => {
                         type="password"
                         id="password"
                         className="input-field"
+                        placeholder="Senha"
                       />
                     </div>
 
@@ -43,13 +44,13 @@ const Login = () => {
                       <button className="btn-primary" type="submit">
                         Acessar
                       </button>
-                      <a className="btn-link" href="#!">
+                      <button className="btn-link" type="button">
                         Recuperar acesso?
-                      </a>
+                      </button>
                     </div>
 
                     <div className="account-actions">
-                      <p style={{ marginTop: "10px" }}>Não tem uma conta?</p>
+                      <p style={{ color: 'black' }}>Não tem uma conta?</p>
                       <button className="btn-secondary">
                         Solicite seu acesso
                       </button>
