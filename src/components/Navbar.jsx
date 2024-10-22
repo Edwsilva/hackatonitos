@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
-import './Navbar.css'; // Importar o CSS para o efeito de deslizamento
+import "./Navbar.css"; // Importar o CSS para o efeito de deslizamento
 import {
   FaHome,
   FaSearch,
@@ -11,15 +11,15 @@ import {
   FaUser,
   FaSignOutAlt,
   FaCaretDown,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
-import { MdClose } from 'react-icons/md';
+import { MdClose } from "react-icons/md";
 
 function Navbar({ isOpen, toggleNavbar }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Estado para controlar a exibição do dropdown
 
   const toggleDropdown = () => {
-    console.log('togleDropDown ', isDropdownOpen);
+    console.log("togleDropDown ", isDropdownOpen);
     setDropdownOpen(!isDropdownOpen); // Alterna o estado
   };
 
@@ -27,7 +27,7 @@ function Navbar({ isOpen, toggleNavbar }) {
     // <div className={`navbar-container ${isOpen ? "open" : ""}`}>
 
     <div
-      className={`navbar-container ${isOpen ? 'open' : ''}`}
+      className={`navbar-container ${isOpen ? "open" : ""}`}
       // Adiciona a classe "open" se isOpen for true
     >
       <nav className="navbar">
@@ -38,7 +38,7 @@ function Navbar({ isOpen, toggleNavbar }) {
               onClick={toggleDropdown} // Chama a função de alternar o dropdown
             >
               Usuário: <b>Edwilson da weweSilva</b>
-              <FaCaretDown style={{ marginLeft: '5px' }} />
+              <FaCaretDown style={{ marginLeft: "5px" }} />
             </a>
             {isDropdownOpen && ( // Renderiza o dropdown somente se isDropdownOpen for true
               <div className="dropdown-menu show dropdown-container">

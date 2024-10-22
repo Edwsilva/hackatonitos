@@ -1,104 +1,94 @@
 {
   "empresas": [
     {
-      "cnpj": "12.345.678/0001-90",
-      "empresa": "Empresa Alfa",
-      "contato": "(21) 1234-5678",
-      "email": "contato@empresa-alfa.com",
-      "site": "www.empresa-alfa.com",
-      "avaliacao": {
-        "estrelas": 4.5,
-        "comentario": "★★★★☆"
-      }
-    },
-    {
-      "cnpj": "23.456.789/0001-01",
-      "empresa": "Beta Solutions",
-      "contato": "(11) 9876-5432",
-      "email": "info@betasolutions.com",
-      "site": "www.betasolutions.com",
-      "avaliacao": {
-        "estrelas": 3.8,
-        "comentario": "★★★☆☆"
-      }
-    },
-    {
-      "cnpj": "34.567.890/0001-12",
-      "empresa": "Gamma Tech",
-      "contato": "(31) 3456-7890",
-      "email": "contato@gammatech.com",
-      "site": "www.gammatech.com",
-      "avaliacao": {
-        "estrelas": 4.7,
-        "comentario": "★★★★★"
-      }
-    },
-    {
-      "cnpj": "45.678.901/0001-23",
-      "empresa": "Delta Innovators",
-      "contato": "(41) 4567-8901",
-      "email": "info@delta-innovators.com",
-      "site": "www.delta-innovators.com",
-      "avaliacao": {
-        "estrelas": 1.0,
-        "comentario": "★☆☆☆☆"
-      }
-    },
-    {
-      "cnpj": "56.789.012/0001-34",
-      "empresa": "Empresa Epsilon",
-      "contato": "(51) 5678-9012",
-      "email": "contato@epsilon.com",
-      "site": "www.epsilon.com",
-      "avaliacao": {
-        "estrelas": 3.0,
-        "comentario": "★★★☆☆"
-      }
-    },
-    {
-      "cnpj": "67.890.123/0001-45",
-      "empresa": "Omicron Corp",
-      "contato": "(61) 6789-0123",
-      "email": "info@omicroncorp.com",
-      "site": "www.omicroncorp.com",
-      "avaliacao": {
-        "estrelas": 4.0,
-        "comentario": "★★★★☆"
-      }
-    },
-    {
-      "cnpj": "78.901.234/0001-56",
-      "empresa": "Lambda Systems",
-      "contato": "(71) 7890-1234",
-      "email": "contato@lambdasystems.com",
-      "site": "www.lambdasystems.com",
-      "avaliacao": {
-        "estrelas": 4.0,
-        "comentario": "★★★★☆"
-      }
-    },
-    {
-      "cnpj": "89.012.345/0001-67",
-      "empresa": "Kappa Consulting",
-      "contato": "(81) 8901-2345",
-      "email": "info@kappaconsulting.com",
-      "site": "www.kappaconsulting.com",
+      "cnpj": "04.534.084/0001-02",
+      "empresa": "PBI Informática Ltda",
+      "contato": "(51)3029-0029",
+      "email": "negocios@bence.com.br",
+      "site": "www.bence.com.br",
       "avaliacao": {
         "estrelas": 5.0,
         "comentario": "★★★★★"
-      }
+      },
+      "cnaePrincipal": "",
+      "descricaoCnaePrincipal": "",
+      "cnaeSecundarias": [
+        {
+          "cnaeSecundaria": "",
+          "descricaoCnaeSecundaria": ""
+        }
+      ],
+      "processos": [
+        {
+          "objeto_processo_rio": "IPL-PRO-2024/00437",
+          "titulo": "FORNECIMENTO DE SOLUÇÃO DE GESTÃO DE ATENDIMENTO NA MODALIDADE DE SOFTWARE COMO UM SERVIÇO (SAAS) COM DISPONIBILIZAÇÃO DA PLATAFORMA PELA INTERNET, INCLUINDO O ARMAZENAMENTO DE DADOS.",
+          "unidade": "",
+          "quantidade": "23",
+          "preco_unitario": "indeferido pela área demandante",
+          "preco_total": "indeferido pela área demandante",
+          "data": "04/09/2024",
+          "validade": "03/12/2024",
+          "itens": [
+            {
+              "numero": "",
+              "descricao": "",
+              "unidade": "",
+              "quantidade": "",
+              "preco_unitario": "",
+              "preco_total": "",
+              "data": "",
+              "validade": "",
+              "situacao": "",
+              "data_homologacao": ""
+            }
+          ]
+        }
+      ]
     },
     {
-      "cnpj": "90.123.456/0001-78",
-      "empresa": "Empresa Sigma",
-      "contato": "(91) 9012-3456",
-      "email": "contato@sigmacorp.com",
-      "site": "www.sigmacorp.com",
+      "cnpj": "21.034.800/0001-01",
+      "empresa": "BLANK IT CONSULTORIA EM INFORMÁTICA LTDA",
+      "contato": "(21)99862-4333",
+      "email": "ilan.blank@blankit.com.br",
+      "site": "www.lankit.com.br",
       "avaliacao": {
-        "estrelas": 3.0,
-        "comentario": "★★★☆☆"
-      }
+        "estrelas": 4.5,
+        "comentario": "★★★★"
+      },
+      "cnaePrincipal": "",
+      "descricaoCnaePrincipal": "",
+      "cnaeSecundarias": [
+        {
+          "cnaeSecundaria": "",
+          "descricaoCnaeSecundaria": ""
+        }
+      ],
+      "processos": [
+        {
+          "objeto_processo_rio": "SME-PRO-2023/00705",
+          "titulo": "Serviços de suporte em Tecnologia da Informação e Comunicação (TIC) – Service Desk –, com Central de Atendimento (Help Desk – 1º Nível) e Atendimento de Campo (2º nível) a usuários, equipamentos de informática e sistemas/aplicativos da Secretaria Municipal de Educação (SME)",
+          "unidade": "",
+          "quantidade": "24",
+          "preco_unitario": "780865,35",
+          "preco_total": "18740768,40",
+          "data": "12/12/2023",
+          "validade": "12/02/2024",
+          "itens": [
+            {
+              "numero": "",
+              "descricao": "",
+              "unidade": "",
+              "quantidade": "",
+              "preco_unitario": "",
+              "preco_total": "",
+              "data": "",
+              "validade": "",
+              "situacao": "",
+              "data_homologacao": ""
+            }
+          ]
+        }
+      ]
     }
-   
   ]
 }

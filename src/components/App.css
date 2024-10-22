@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 1rem; */
+}
+
+/* html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+} */
+body {
+  background: rgb(3, 0, 31);
+  color: white;
+  font-family: "System-ui", sans-serif;
+}
+
+hr {
+  border: none;
+  height: 1px; /* Altura da linha */
+  background-color: rgba(0, 0, 0, 0.2); /* Cor preta com opacidade de 20% */
+}
+
+h1 {
+  color: black; /* Fonte preta */
+}
+
+h5 {
+  color: #3f4144; /* Fonte preta */
+}
+.custom-navbar {
+  height: 80px; /* ajuste a altura conforme necessário */
+  /* padding: 0; ajuste o padding para controlar melhor a altura */
+  padding: "0 10px";
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+}
+
+.slideBar {
+  flex: 3;
+  border-right: 1px solid rgb(100, 100, 100);
+}
+
+.main {
+  flex: 9;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preferenctext-align) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.bg-blue {
+  background-color: rgb(11, 55, 95); /* Altere para o tom de azul desejado */
+}
+
+.table-blue {
+  background-color: rgb(
+    17,
+    17,
+    19
+  ) !important; /* para forçar a aplicação do estilo */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.input-group {
+  display: flex;
+  align-items: center; /* Alinha verticalmente no centro */
+}
+
+.input-group-append {
+  display: flex; /* Garante que os botões fiquem em linha */
+}
+
+.custom-button {
+  margin-left: 0px; /* Espaçamento entre os botões */
+  padding: 10px 15px; /* Estilo de padding dos botões */
+  border-radius: 0px !important; /* Remove o border-radius */
+}
+.custom-button:last-child {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
