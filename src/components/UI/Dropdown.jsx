@@ -56,35 +56,43 @@ const TypeWriterModal = ({ show, handleClose }) => {
 
 const DropDownButton = () => {
   const navigate = useNavigate();
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
 
   return (
-    <Dropdown>
-      <Dropdown.Toggle variant="primary" id="dropdown-basic" title="IA">
-        {/* <FaMagic />  */}
-        <img
-          src={IA}
-          alt="Ícone"
-          style={{ width: "30px", height: "30px", marginRight: "5px" }}
-        />
-      </Dropdown.Toggle>
+    <>
+      <Dropdown>
+        <Dropdown.Toggle variant="primary" id="dropdown-basic" title="IA">
+          {/* <FaMagic />  */}
 
-      <Dropdown.Menu style={{ backgroundColor: "#0056b3" }}>
-        <Dropdown.Item
-          onClick={() => navigate("/action-2")}
-          style={{ color: "#ffffff" }}
-          className="dropdown-item-hover"
-        >
-          Perfil com IA
-        </Dropdown.Item>
-        <Dropdown.Item
-          onClick={() => navigate("/action-3")}
-          style={{ color: "#ffffff" }}
-          className="dropdown-item-hover"
-        >
-          Resumo de Depoimentos com IA
-        </Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+          <img
+            src={IA}
+            alt="Ícone"
+            style={{ width: "30px", height: "30px", marginRight: "5px" }}
+          />
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu style={{ backgroundColor: "#0056b3" }}>
+          <Dropdown.Item
+            onClick={handleShow}
+            style={{ color: "#ffffff" }}
+            className="dropdown-item-hover"
+          >
+            Perfil com IA
+          </Dropdown.Item>
+          <Dropdown.Item
+            onClick={() => navigate("/action-3")}
+            style={{ color: "#ffffff" }}
+            className="dropdown-item-hover"
+          >
+            Resumo de Depoimentos com IA
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <TypeWriterModal show={showModal} handleClose={handleClose} />
+    </>
   );
 };
 
