@@ -241,7 +241,7 @@
 
 // export default CompanyTable;
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 const CompanyTable = ({ empresas }) => {
   // const [empresas, setEmpresas] = useState([]);
@@ -260,22 +260,55 @@ const CompanyTable = ({ empresas }) => {
       <div className="card-body p-0">
         <div
           className="table-responsive"
-          style={{ position: "relative", height: "400px", overflowY: "auto" }}
+          style={{ position: 'relative', height: '400px', overflowY: 'auto' }}
         >
           <table className="table table-striped table-hover mb-0">
             <thead>
               <tr style={{ backgroundColor: 'blue' }}>
-                <th style={{ backgroundColor: '#004A80', color:"white" }} scope="col">CNPJ</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white"}} scope="col">Empresa</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col">Contatos</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col">Email</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col">Site</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col">Avaliação</th>
-                <th  style={{ backgroundColor: '#004A80', color:"white" }} scope="col"></th>
+                <th
+                  style={{ backgroundColor: '#004A80', color: 'white' }}
+                  scope="col"
+                >
+                  CNPJ
+                </th>
+                <th
+                  style={{ backgroundColor: '#004A80', color: 'white' }}
+                  scope="col"
+                >
+                  Empresa
+                </th>
+                <th
+                  style={{ backgroundColor: '#004A80', color: 'white' }}
+                  scope="col"
+                >
+                  Contatos
+                </th>
+                <th
+                  style={{ backgroundColor: '#004A80', color: 'white' }}
+                  scope="col"
+                >
+                  Email
+                </th>
+                <th
+                  style={{ backgroundColor: '#004A80', color: 'white' }}
+                  scope="col"
+                >
+                  Site
+                </th>
+                <th
+                  style={{ backgroundColor: '#004A80', color: 'white' }}
+                  scope="col"
+                >
+                  Avaliação
+                </th>
+                <th
+                  style={{ backgroundColor: '#004A80', color: 'white' }}
+                  scope="col"
+                ></th>
               </tr>
             </thead>
             <tbody>
-              {empresas.map((empresa) => (
+              {empresas.map(empresa => (
                 <tr key={empresa.cnpj}>
                   <td>{empresa.cnpj}</td>
                   <td>{empresa.empresa}</td>
@@ -286,7 +319,7 @@ const CompanyTable = ({ empresas }) => {
                     <span className="badge text-bg-light">
                       <span className="text-warning">
                         {empresa.avaliacao.comentario}
-                      </span>{" "}
+                      </span>{' '}
                       {empresa.avaliacao.estrelas}
                     </span>
                   </td>
@@ -295,7 +328,7 @@ const CompanyTable = ({ empresas }) => {
                       type="button"
                       className="btn btn-sm btn-outline-primary"
                     >
-                      <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
+                      <i className="fa fa-list-alt" aria-hidden="true"></i>{' '}
                       Detalhes
                     </button>
                   </td>

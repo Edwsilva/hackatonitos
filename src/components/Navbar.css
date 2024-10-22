@@ -1,27 +1,37 @@
 /* Estilo do container do navbar */
+/* Ensure the navbar stays above the overlay */
 .navbar-container {
   position: absolute;
-  top: 0px;
-  left: -400px; /* Fora da tela inicialmente */
+  top: 0;
   width: 400px;
   height: 100%;
-  /* background-color: #80006b; */
   background-color: #004a80;
-  transition: left 0.8s ease, opacity 0.8s ease, transform 0.8s ease; /* Transições para left, opacity e transform */
-  z-index: 9999;
-  opacity: 0; /* Começa invisível */
-  transform: translateX(-20px); /* Levemente deslocado para a esquerda */
+  transition: transform 0.8s ease; /* Smooth transition */
+  z-index: 9999; /* Above overlay */
+  transform: translateX(-400px);
 }
 
-/* Quando o navbar está aberto */
-/* .navbar-container.open {
-  left: 0;
-} */
-
 .navbar-container.open {
-  left: 0px; /* Dentro da tela */
-  opacity: 1; /* Visível */
-  transform: translateX(0); /* Volta para a posição original */
+  transform: translateX(0); /* Slide back to view */
+}
+
+/* Overlay for darkening the rest of the page */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9998; /* Behind navbar */
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
 }
 
 .navbar {
@@ -52,6 +62,10 @@
 .navbar-bar .nav-link {
   color: white !important; /* Força a cor branca */
   text-decoration: none; /* Remove o sublinhado dos links */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-title {
@@ -61,11 +75,18 @@
 }
 
 .navbar-body {
+  width: 245px;
   margin-top: 20px;
 }
 
 .nav-item {
-  margin-bottom: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #003cff;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10px;
+  padding: 0px;
 }
 
 .dropdown-container {
@@ -89,10 +110,21 @@
   border: none; /* Remove bordas padrão */
   margin: 5px 0; /* Espaçamento acima e abaixo da linha */
 }
-.nav-link:hover {
-  background-color: #f8f2f2;
-  padding: 8px;
-  border-radius: 5px;
+
+.nav-item > .nav-link{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 10px;
+  color: white;
+  background: #0d6efd;
+}
+
+.nav-item > .nav-link:hover {
+  background-color: #0b5ed7;
+  color: white;
 }
 
 /* Botão de fechar o navbar */
