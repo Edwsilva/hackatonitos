@@ -1,0 +1,21 @@
+.titulo-principal {
+  font-family: "Courier New", Courier, monospace;
+  color: #000; /* Cor do texto dentro do modal */
+  text-align: center; /* Centraliza o texto */
+}
+
+.cursor {
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.7s infinite; /* Animação de piscar */
+}
+
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
