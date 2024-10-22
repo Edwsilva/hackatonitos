@@ -12,6 +12,9 @@ const Login = () => {
 
   const handleAccess = (e) => {
     e.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (email === "" || password === "") {
       setError("Por favor, preencha todos os campos.");
       setTimeout(() => {
@@ -20,6 +23,14 @@ const Login = () => {
       return;
     }
 
+    // Validação do formato de email
+    if (!emailRegex.test(email)) {
+      setError("Por favor, insira um email válido.");
+      setTimeout(() => {
+        setError("");
+      }, 2000);
+      return;
+    }
     // Se ambos os campos estão preenchidos, navega para a rota Home
     setError(""); // Limpa a mensagem de erro
     navigate("/action-2");
