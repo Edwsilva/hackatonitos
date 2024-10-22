@@ -50,6 +50,7 @@ const CompanyTable = ({ empresas }) => {
               <td>{empresa.contato}</td>
               <td>{empresa.email}</td>
               <td>{empresa.site}</td>
+              <td>{empresa.data}</td>
               <td>{""}</td>
               <td>
                 <span className="badge text-bg-light">
