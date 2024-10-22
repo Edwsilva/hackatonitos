@@ -12,7 +12,7 @@ const CompanyTable = ({ empresas }) => {
         <thead style={{ borderSpacing: "10px", padding: "5px" }}>
           <tr
             style={{
-              backgroundColor: "#004A80",
+              backgroundColor: "#0D6EFD",
               color: "white",
             }}
           >

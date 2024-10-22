@@ -4,7 +4,7 @@
   left: 0; /* Garante que o rodapé comece do lado esquerdo */
   right: 0; /* Garante que o rodapé termine do lado direito */
   width: 100%; /* Garante que o rodapé ocupe toda a largura */
-  background-color: #004a86; /* Cor de fundo */
+  background-color: #004a80; /* Cor de fundo */
   padding: 10px 0; /* Espaçamento vertical */
   color: white; /* Cor do texto */
   text-align: center; /* Centraliza o texto */

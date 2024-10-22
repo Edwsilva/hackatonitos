@@ -38,15 +38,21 @@ function Navbar({ isOpen, toggleNavbar }) {
       </div>
 
       <nav className="navbar">
-        <div className="navbar-header">
+        <div
+          style={{
+            backgroundColor: "transparent",
+            justifyContent: "center",
+            display: "flex",
+            width: "400px",
+            borderRadius: "5px",
+          }}
+        >
           <ul className="navbar-nav">
             <a
-              style={{ color: "white" }}
-              //   aria-expanded="true"
               aria-expanded={isDropdownOpen} // Atualiza a propriedade aria-expanded com base no estado
               onClick={toggleDropdown} // Chama a função de alternar o dropdown
             >
-              Usuário: <b>Edwilson da Silva</b>
+              Usuário: <b>Edwilson da weweSilva</b>
               <FaCaretDown style={{ marginLeft: "5px" }} />
             </a>
             {isDropdownOpen && ( // Renderiza o dropdown somente se isDropdownOpen for true
