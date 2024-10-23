@@ -17,12 +17,12 @@ const DetalhesModal = ({ show, handleClose, data }) => {
     <div>
       return (
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header style={{ color: "write", backgroundColor: "#2c14c9" }}>
+        <Modal.Header style={{ color: "write", backgroundColor: "#0D6EFD" }}>
           <Modal.Title>Detalhes do Processo</Modal.Title>
         </Modal.Header>
 
         {data && time ? (
-          <Modal.Body style={{ color: "write", backgroundColor: "#2c14c9" }}>
+          <Modal.Body style={{ color: "write", backgroundColor: "#0D6EFD" }}>
             <div>
               <p>
                 <strong>Título:</strong> {data.titulo}
@@ -50,7 +50,7 @@ const DetalhesModal = ({ show, handleClose, data }) => {
         ) : (
           <p style={{ color: "black" }}>Carregando...</p>
         )}
-        <Modal.Footer style={{ color: "write", backgroundColor: "#2c14c9" }}>
+        <Modal.Footer style={{ color: "write", backgroundColor: "#0D6EFD" }}>
           <Button variant="secondary" onClick={handleClose}>
             Fechar
           </Button>
