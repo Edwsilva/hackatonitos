@@ -20,8 +20,8 @@
 }
 
 .card-full {
-  width: 100%;
-  max-width: 900px;
+  width: 80%;
+  max-width: 1100px;
   background-color: white;
   border-radius: 10px;
   display: flex;
@@ -36,6 +36,7 @@
 .col-half {
   width: 50%;
   padding: 2rem;
+  /* background-color: #0044cc; */
 }
 
 .card-content {
@@ -46,12 +47,13 @@
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 350px;
   margin-bottom: 1rem;
 }
 
 .welcome-text {
   margin-bottom: 1rem;
+  color: black;
 }
 
 .input-group {
@@ -104,7 +106,7 @@
 }
 
 .btn-link:hover {
-  background: #D3D4D5;
+  background: #d3d4d5;
   color: black !important;
 }
 
@@ -153,13 +155,14 @@
 }
 .bg-gradient {
   /* background: linear-gradient(135deg, #00a2ff, #0072ff);  */
-  background: #0072ff;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .info-box {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
   color: white;
   padding: 2rem;
   text-align: center;

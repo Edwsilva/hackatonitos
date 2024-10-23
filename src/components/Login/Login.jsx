@@ -50,7 +50,9 @@ const Login = () => {
                   </div>
 
                   <form method="post" action="main.html">
-                    <p>Informe abaixo, os dados de acesso:</p>
+                    <p className="welcome-text">
+                      Informe abaixo, os dados de acesso:
+                    </p>
 
                     <div className="input-group">
                       <label htmlFor="email">Usuário</label>
