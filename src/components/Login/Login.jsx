@@ -102,10 +102,10 @@ const Login = () => {
                 </div>
               </div>
 
-              <div className="col-half bg-gradient">
+              <div className="col-half-right bg-gradient">
                 <div className="info-box">
                   <img src={logopcrj} className="info-logo" alt="logo" />
-                  <hr />
+                  <hr className="hr-halfright" />
                   <h4 className="info-heading">
                     Nós somos mais que um sistema! Somos uma Solução!
                   </h4>

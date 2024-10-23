@@ -36,7 +36,15 @@
 .col-half {
   width: 50%;
   padding: 2rem;
+  border: 1px solid #c5c0c0; /* Linha fina de 1px com cor preta */
+  box-sizing: border-box; /* Inclui o padding dentro da largura e altura do elemento */
   /* background-color: #0044cc; */
+}
+.col-half-right {
+  width: 50%;
+  padding: 0px;
+
+  /* padding: 2rem; */
 }
 
 .card-content {
@@ -117,7 +125,7 @@
   margin-top: 2rem;
 } */
 .account-actions {
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   align-items: baseline; /* Alinha os itens verticalmente no centro */
   justify-content: center; /* Opcional: centraliza o conteúdo horizontalmente */
@@ -154,17 +162,19 @@
   ); /* Alteração para um tom mais escuro no hover */
 }
 .bg-gradient {
-  /* background: linear-gradient(135deg, #00a2ff, #0072ff);  */
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  /background: linear-gradient(135deg, #0072ff, #00c6ff);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.hr-halfright {
+  background-color: #bcc5d6;
+}
 .info-box {
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background: linear-gradient(175deg, #425975, #00c6ff);
   color: white;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
 }
 
