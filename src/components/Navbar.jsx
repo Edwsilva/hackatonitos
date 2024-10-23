@@ -21,7 +21,6 @@ function Navbar({ isOpen, toggleNavbar }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLogoff = () => {
-    // Redireciona para a tela de Login
     navigate("/");
   };
 
@@ -31,12 +30,7 @@ function Navbar({ isOpen, toggleNavbar }) {
   };
 
   return (
-    // <div className={`navbar-container ${isOpen ? "open" : ""}`}>
-
-    <div
-      className={`navbar-container ${isOpen ? "open" : ""}`}
-      // Adiciona a classe "open" se isOpen for true
-    >
+    <div className={`navbar-container ${isOpen ? "open" : ""}`}>
       <nav className="navbar">
         <div className="navbar-header">
           <ul className="navbar-nav">

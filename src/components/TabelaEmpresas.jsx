@@ -4,58 +4,17 @@ import DropDownButton from "./UI/Dropdown";
 import { Modal, Button } from "react-bootstrap";
 import DetalhesModal from "./Modal/DetalhesModal";
 
-// const DetalhesModal = ({ show, handleClose, data }) => {
-//   console.log("data", data);
-//   return (
-//     <div style={{ color: "black" }}>
-//       <Modal show={show} onHide={handleClose}>
-//         <Modal.Header closeButton>
-//           <Modal.Title
-//             style={{ color: "black", fontSize: "8px", fontStyle: "bold" }}
-//           >
-//             {data.titulo}
-//           </Modal.Title>
-//         </Modal.Header>
-//         <Modal.Body>
-//           {/* Renderize os dados aqui */}
-//           {data ? (
-//             <div>
-//               <p>
-//                 <strong style={{ color: "black", fontSize: "8px" }}>ID:</strong>
-//                 {data.objeto_processo_rio}
-//               </p>
-//               <p>
-//                 <strong>Nome:</strong> {data.preco_total}
-//               </p>
-//               {/* Mais campos de dados da API */}
-//             </div>
-//           ) : (
-//             <p>Carregando...</p>
-//           )}
-//         </Modal.Body>
-//         <Modal.Footer>
-//           <Button variant="secondary" onClick={handleClose}>
-//             Fechar
-//           </Button>
-//         </Modal.Footer>
-//       </Modal>
-//     </div>
-//   );
-// };
-
 const TabelaEmpresas = ({ empresas }) => {
   const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState("");
 
   const handleShowModal = (processo) => {
     setData(processo); // Recebe o item do array
-
     setShowModal(true);
   };
 
   const handleCloseModal = () => setShowModal(false);
 
-  console.log("empresas ", empresas);
   return (
     <div className="tabela-container">
       <table className="tabela">

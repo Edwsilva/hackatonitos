@@ -6,7 +6,6 @@ import { FaSearch, FaBolt } from "react-icons/fa";
 import Header from "./Header";
 import Footer from "./Footer/Footer";
 import TabelaEmpresas from "./TabelaEmpresas";
-import CompanyTable from "./CompanyTable";
 
 const Home = () => {
   const [search, setSearch] = useState("");
