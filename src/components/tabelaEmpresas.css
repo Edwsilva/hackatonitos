@@ -1,0 +1,51 @@
+/* .table-container {
+  overflow-x: auto;
+  left: "10%";
+  right: "10%";
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.table-container thead {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.cnpj-col {
+  width: 150px !important; /* Largura desejada para a coluna CNPJ */
+/* } */
+.tabela-container {
+  margin-top: 0px;
+  overflow-x: auto; /* Permite rolagem horizontal na tabela */
+  overflow-y: auto; /* Permite rolagem vertical na tabela */
+  max-width: 100%; /* Largura máxima da tabela */
+  max-height: 400px; /* Altura máxima do container da tabela */
+  border-top-left-radius: 10px; /* Raio para o canto superior esquerdo */
+  border-top-right-radius: 8px; /* Raio para o canto superior direito */
+  background-color: white; /* Cor de fundo do container (opcional) */
+}
+
+.tabela {
+  width: 100%; /* A tabela ocupa 100% da largura do container */
+  color: #0c0909;
+}
+
+.tabela th,
+.tabela td {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+  height: 70px;
+  text-align: left; /* Alinhamento do texto */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  /* background-color: aqua; */
+}
+
+.tabela th {
+  background-color: #0061a7; /* Cor de fundo para cabeçalho */
+  position: sticky; /* Fixa o cabeçalho ao rolar */
+  top: 0px; /* Posiciona o cabeçalho no topo do container */
+  z-index: 10; /* Garante que o cabeçalho esteja acima do conteúdo da tabela */
+  color: white;
+}

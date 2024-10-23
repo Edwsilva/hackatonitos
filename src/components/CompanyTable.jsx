@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import DropDownButton from "./UI/Dropdown";
 
 const CompanyTable = ({ empresas }) => {
+  console.log(empresas);
   return (
     <div
       className="table-responsive"
@@ -55,6 +56,7 @@ const CompanyTable = ({ empresas }) => {
               <td>{empresa.email}</td>
               <td>{empresa.site}</td>
               <td>{empresa.data}</td>
+
               <td>{""}</td>
               <td>
                 <span className="badge text-bg-light">

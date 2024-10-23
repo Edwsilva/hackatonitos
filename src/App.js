@@ -1,24 +1,22 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { FaSearch, FaBolt, FaMagic } from "react-icons/fa";
-import Header from "./components/Header";
+
 import Login from "./components/Login/Login.jsx";
 // import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
-import CompanyTable from "./components/CompanyTable.jsx";
-import Navbar from "./components/Navbar";
+
 import Home from "./components/Home";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/action-2" element={<Home />} />
-        <Route path="/action-3" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/action-2" element={<Home />} />
+        <Route path="/action-3" element={<Home />} /> */}
       </Routes>
     </Router>
   );
