@@ -74,7 +74,7 @@
   padding: 0.5rem;
   margin-top: 0.5rem;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #a19a9a;
 }
 
 .action-group {
@@ -118,12 +118,6 @@
   color: black !important;
 }
 
-/* .account-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-} */
 .account-actions {
   margin-top: 1rem;
   display: flex;
@@ -131,15 +125,6 @@
   justify-content: center; /* Opcional: centraliza o conteúdo horizontalmente */
   gap: 3.5rem; /* Espaçamento entre o texto e o botão */
 }
-
-/* .btn-secondary {
-  background-color: rgba(180, 182, 184, 0.8);
-  color: rgb(15, 15, 15);
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-} */
 
 .btn-secondary {
   background: linear-gradient(
