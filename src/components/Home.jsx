@@ -29,8 +29,9 @@ const Home = () => {
 
   return (
     <main className="pb-2 pt-5">
-      <Header />
-      <div className="container my-1">
+      <Header style={{ marginBottom: "0.5rem" }} />{" "}
+      {/* Ajusta a margem inferior do Header */}
+      <div className="container my-10">
         <div className="bg-body-tertiary p-2 rounded">
           <div
             className="fixed-content"
@@ -44,7 +45,7 @@ const Home = () => {
               maxWidth: "100%", // Para evitar que fique maior que a tela
             }}
           >
-            <div className="col-sm-12 py-4 mx-auto">
+            <div className="col-sm-12 py-0 mx-auto">
               <nav
                 style={{
                   "--bs-breadcrumb-divider":
