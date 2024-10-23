@@ -37,21 +37,22 @@ const TypeWriterModal = ({ show, handleClose }) => {
 
   return (
     <Modal show={show} onHide={handleClose}>
-      <Modal.Header closeButton>
-        <Modal.Title>Efeito Máquina de Escrever</Modal.Title>
+      <Modal.Header className="corfundo" closeButton>
+        {/* <Modal.Title>Efeito Máquina de Escrever</Modal.Title> */}
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="corfundo">
         <div className="titulo-principal">
           <img
             src={IA}
             alt="Ícone"
             style={{ width: "50px", height: "50px", marginRight: "5px" }}
           />
+          <p></p>
           {text}
-          <span className="cursor">|</span>
+          <span className="cursor"></span>
         </div>
       </Modal.Body>
-      <Modal.Footer>
+      <Modal.Footer className="corfundo">
         <Button variant="secondary" onClick={handleClose}>
           Fechar
         </Button>
@@ -76,7 +77,7 @@ const DropDownButton = () => {
           <img
             src={IA}
             alt="Ícone"
-            style={{ width: "30px", height: "30px", marginRight: "5px" }}
+            style={{ width: "20px", height: "20px", marginRight: "5px" }}
           />
         </Dropdown.Toggle>
 
