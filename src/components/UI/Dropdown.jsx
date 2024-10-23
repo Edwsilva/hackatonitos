@@ -45,7 +45,7 @@ const TypeWriterModal = ({ show, handleClose }) => {
           <img
             src={IA}
             alt="Ícone"
-            style={{ width: "30px", height: "30px", marginRight: "5px" }}
+            style={{ width: "50px", height: "50px", marginRight: "5px" }}
           />
           {text}
           <span className="cursor">|</span>
