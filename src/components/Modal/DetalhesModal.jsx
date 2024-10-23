@@ -48,7 +48,9 @@ const DetalhesModal = ({ show, handleClose, data }) => {
             </div>
           </Modal.Body>
         ) : (
-          <p style={{ color: "black" }}>Carregando...</p>
+          <div style={{ color: "write", backgroundColor: "#0D6EFD" }}>
+            <p>Carregando...</p>
+          </div>
         )}
         <Modal.Footer style={{ color: "write", backgroundColor: "#0D6EFD" }}>
           <Button variant="secondary" onClick={handleClose}>
