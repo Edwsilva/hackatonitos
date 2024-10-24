@@ -121,3 +121,15 @@ h5 {
 .custom-button:hover {
   background-color: #0056b3; /* Cor ao passar o mouse */
 }
+
+
+.modal-custom-size {
+  .modal-custom-size .modal-dialog {
+    max-width: 70%; /* Define a largura maior para o modal */
+  }
+  
+  .modal-custom-size .modal-body {
+    max-height: 70vh; /* Limite a altura para manter o modal retangular */
+    overflow-y: auto; /* Permite rolar o conteúdo se for muito alto */
+  }
+}

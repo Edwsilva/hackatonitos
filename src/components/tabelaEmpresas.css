@@ -49,3 +49,18 @@
   z-index: 10; /* Garante que o cabeçalho esteja acima do conteúdo da tabela */
   color: white;
 }
+.modal-custom-size {
+  .modal-custom-size .modal-dialog {
+    max-width: 70%; /* Define a largura maior para o modal */
+  }
+  
+  .modal-custom-size .modal-body {
+    max-height: 50vh; /* Limite a altura para manter o modal retangular */
+    overflow-y: auto; /* Permite rolar o conteúdo se for muito alto */
+  }
+}
+.modal-custom-size .modal-body p, 
+.modal-custom-size .modal-body div {
+  line-height: 1; /* Ajuste o valor para reduzir o espaçamento entre as linhas */
+  margin-bottom: 8px; /* Opcional: diminui o espaçamento inferior entre parágrafos */
+}

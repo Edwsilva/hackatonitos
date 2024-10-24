@@ -3,17 +3,22 @@ import "./tabelaEmpresas.css"; // Estilos CSS para a tabela
 import DropDownButton from "./UI/Dropdown";
 import { Modal, Button } from "react-bootstrap";
 import DetalhesModal from "./Modal/DetalhesModal";
+import CompanyProfile from "./PerfilEmpresa/CompanyProfile";
 
 const TabelaEmpresas = ({ empresas }) => {
   const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState("");
+  const [selectedEmpresa, setSelectedEmpresa] = useState(null);
 
-  const handleShowModal = (processo) => {
-    setData(processo); // Recebe o item do array
+  const handleShowModal = (empresa) => {
+    setSelectedEmpresa(empresa); // Recebe a empresa inteira, não apenas processo
     setShowModal(true);
   };
 
-  const handleCloseModal = () => setShowModal(false);
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSelectedEmpresa(null); // Limpa a empresa selecionada ao fechar o modal
+  };
 
   return (
     <div className="tabela-container">
@@ -52,10 +57,10 @@ const TabelaEmpresas = ({ empresas }) => {
                   <button
                     type="button"
                     className="btn btn-sm btn-outline-primary me-2"
-                    onClick={() => handleShowModal(empresa.processos[0])}
+                    onClick={() => handleShowModal(empresa)}
                   >
                     <i className="fa fa-list-alt" aria-hidden="true"></i>{" "}
-                    Detalhes
+                    Detalhess
                   </button>
                   <DropDownButton />
                 </div>
@@ -65,13 +70,27 @@ const TabelaEmpresas = ({ empresas }) => {
         </tbody>
       </table>
 
-      {showModal && (
+      <Modal show={showModal} onHide={handleCloseModal} dialogClassName="modal-custom-size"   style={{ height: "600px" }}>
+        {/* <Modal.Header closeButton>
+          <Modal.Title style={{color: "black"}}>Detalhes da Empresa</Modal.Title>
+        </Modal.Header> */}
+        <Modal.Body style={{fontSize: '12px', padding: "0px"}}>
+          {selectedEmpresa && <CompanyProfile empresa={selectedEmpresa} />}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Fechar
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      {/* {showModal && (
         <DetalhesModal
           show={showModal}
           handleClose={handleCloseModal}
           data={data}
         />
-      )}
+      )} */}
     </div>
   );
 };
