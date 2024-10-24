@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import IA from "../../assets/IA.png";
+import iaColorida from "../../assets/iaColorida.jpeg"
 import chatgpt from "../../assets/chatgpt.svg";
 import { FaMagic } from "react-icons/fa";
 import { Dropdown } from "react-bootstrap";
